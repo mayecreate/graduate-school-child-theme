@@ -8,7 +8,8 @@
 */
 get_header(); ?>
 		
-       
+        <?php $results_page_url = esc_html(get_field("results_page_url", $post->ID)); ?>
+
 		<div class="row">
 		    <?php get_template_part('partials/loop','standard'); ?>
 		</div>
@@ -19,7 +20,7 @@ get_header(); ?>
             ) ); ?>
         <?php foreach ($terms as $cat) { ?>
             <div class="col-md-3 col-sm-6">
-                <a href="<?php bloginfo('url'); ?>/genetics-area-program-faculty/?_sft_staffarea=<?php echo $cat->slug; ?>" class="staff_cat_wrapper">
+                <a href="<?php echo $results_page_url; ?>/?_sft_staffarea=<?php echo $cat->slug; ?>" class="staff_cat_wrapper">
                     <?php $category_icon = get_field('category_icon', 'staffarea_'.$cat->term_id); ?>
                     <?php
                     // Image variables.
