@@ -9,10 +9,6 @@
 get_header(); ?>
 		
         <?php $results_page_url = esc_html(get_field("results_page_url", $post->ID)); ?>
-
-		<div class="row">
-		    <?php get_template_part('partials/loop','standard'); ?>
-		</div>
         <div class="row">
             <?php $terms = get_terms( array(
                 'taxonomy' => 'staffarea',
@@ -47,6 +43,10 @@ get_header(); ?>
         <?php } ?>
         <?php wp_reset_postdata(); ?>
         </div>
+		<div class="row">
+			<div class="col-md-12"><div class="divider"></div></div>
+		    <?php get_template_part('partials/loop','standard'); ?>
+		</div>
 
 	</div><!-- page -->
 	</div><!-- page -->
