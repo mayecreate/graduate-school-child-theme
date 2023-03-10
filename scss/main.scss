@@ -558,7 +558,7 @@ h2, .h2 {
     display: block;
     border: 0 none;
     margin: 0 auto 20px auto;
-    text-align: center;
+    text-align: center; 
 }
 .staff_cat_wrapper h2 {
     margin: 0;
@@ -1246,7 +1246,7 @@ div#homefeatured .carousel-control, #home_buttons {
                     background: vars.$footer_link_hover_color;
                     text-transform: uppercase;
                 }                
-                #footer_nav a:hover, #footer_nav a:active {
+                #footer_nav a:hover, #footer_nav a:active, #footer_nav a:focus, #footer_nav>ul>li.active>a {
                     padding:5px 15px;
                     color: vars.$footer_link_color;
                     background: vars.$secondary_color;
