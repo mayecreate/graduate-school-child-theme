@@ -4148,6 +4148,66 @@
         "show_in_rest": 0
     },
     {
+        "key": "group_640b7b9132119",
+        "title": "Search and Filter Form ID",
+        "fields": [
+            {
+                "key": "field_640b7b9350702",
+                "label": "Search and Filter Form ID",
+                "name": "search_and_filter_form_id",
+                "aria-label": "",
+                "type": "number",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": "",
+                "max": "",
+                "placeholder": "",
+                "step": "",
+                "prepend": "",
+                "append": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-staff-2020.php"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-type-search-form.php"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-degree-program-search.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
         "key": "group_63ee768b83390",
         "title": "Spotlight Block",
         "fields": [
@@ -4268,6 +4328,47 @@
                     "param": "block",
                     "operator": "==",
                     "value": "acf\/mc-staff"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_640b722e47366",
+        "title": "Staff Categories - Results Link",
+        "fields": [
+            {
+                "key": "field_640b722feddb0",
+                "label": "Results Page URL",
+                "name": "results_page_url",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "page-staff-categories-2020.php"
                 }
             ]
         ],

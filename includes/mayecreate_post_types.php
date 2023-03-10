@@ -24,6 +24,7 @@ function build_taxonomies() {
     //register_taxonomy( 'pdcategory', 'menu', array( 'hierarchical' => true, 'label' => 'Categories', 'query_var' => true, 'rewrite' => true ) );
     register_taxonomy( 'eventcategory', 'menu', array( 'hierarchical' => true, 'label' => 'Categories', 'query_var' => true, 'rewrite' => true ) );
     register_taxonomy( 'staffcategory', 'menu', array( 'hierarchical' => true, 'label' => 'Categories', 'query_var' => true, 'rewrite' => true ) );
+    register_taxonomy( 'staffarea', 'menu', array( 'hierarchical' => true, 'label' => 'Research Areas', 'query_var' => true, 'rewrite' => true ) );
     register_taxonomy( 'dgscategory', 'menu', array( 'hierarchical' => true, 'label' => 'Categories', 'query_var' => true, 'rewrite' => true ) );
     register_taxonomy( 'dgscategory_sep', 'menu', array( 'hierarchical' => true, 'label' => 'Contact/DGS Categories', 'query_var' => true, 'rewrite' => true ) );
     register_taxonomy( 'pdsubject', 'menu', array( 'hierarchical' => true, 'label' => 'Development Subject', 'query_var' => true, 'rewrite' => true ) );
@@ -189,7 +190,7 @@ function mayecreate_create_post_type() {
 
 				),
 			'public' => true,
-			'taxonomies' => array('staffcategory'),
+			'taxonomies' => array('staffcategory', 'staffarea'),
 			'menu_position' => 10,
 			'rewrite' => array('slug' => 'staff'),
 			'supports' => array('title','thumbnail','revisions','editor'),

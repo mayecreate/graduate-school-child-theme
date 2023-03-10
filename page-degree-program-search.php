@@ -8,12 +8,12 @@
 */
 get_header(); ?>
 		
-       
+        <?php $search_and_filter_form_id = esc_html(get_field("search_and_filter_form_id", $post->ID)); ?>
 		<div class="row">
 		    <?php //get_template_part('partials/loop','standard'); ?>
             <div class="col-md-12">
             <h2 class="degree_search_title">Filter Programs</h2>
-            <?php echo do_shortcode( '[searchandfilter id="2936"]' ); ?>
+            <?php echo do_shortcode( '[searchandfilter id="'.$search_and_filter_form_id.'"]' ); ?>
             </div>
 		</div>
         <div class="clear"></div>
@@ -23,7 +23,7 @@ get_header(); ?>
 				$args = array(
 				'post_type' => 'degree_programs',
 				);
-                $args['search_filter_id'] = 2936;?>
+                $args['search_filter_id'] = $search_and_filter_form_id;?>
 
 				<?php // query
 				$wp_query = new WP_Query( $args );

@@ -7,10 +7,11 @@
 * order in the markup (main content then sidebar content)
 */
 get_header(); ?>
+<?php $search_and_filter_form_id = esc_html(get_field("search_and_filter_form_id", $post->ID)); ?>
        <div id="quick_search_sidebar">
 		<h2 class="quicksort_title">Quick Sort <span>Select One or More</span></h2>
 		<div class="divider"></div>
-		<?php echo do_shortcode( '[searchandfilter id="3337"]' ); ?>
+		<?php echo do_shortcode( '[searchandfilter id="'.$search_and_filter_form_id.'"]' ); ?>
 	</div>
 		<div class="row">
 			
@@ -19,7 +20,7 @@ get_header(); ?>
 				$args = array(
 				'post_type' => 'professional_dev',
 				);
-                $args['search_filter_id'] = 3337;?>
+                $args['search_filter_id'] = $search_and_filter_form_id;?>
 
 				<?php // query
 				$wp_query = new WP_Query( $args );
