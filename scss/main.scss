@@ -554,6 +554,39 @@ h2, .h2 {
     display: block;
     max-width: 95%;
 }
+.staff_cat_wrapper:link, .staff_cat_wrapper:visited {
+    display: block;
+    border: 0 none;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+.staff_cat_wrapper h2 {
+    margin: 0;
+    font-weight: 600;
+    transition: all 0.14s ease-in-out;
+}
+.staff_cat_wrapper:hover h2 {
+    color: child_vars.$dark_grey;
+}
+.staff_cat_wrapper h2:after, .staff_cat_wrapper h2:before {
+    display: none;
+    font-weight: 700;
+}
+.staff_cat_wrapper .cat_img_icon {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 250px;
+    height: 250px;
+    background-color: child_vars.$weird_grey;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 65%;
+    border-radius: 50%;
+    transition: all 0.14s ease-in-out;
+}
+.staff_cat_wrapper:hover .cat_img_icon {
+    background-color: vars.$additional_theme_color_1;   
+}
 .staff_indiv_cat_wrapper {
     position: relative;
     display: block;
