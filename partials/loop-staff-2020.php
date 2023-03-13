@@ -11,7 +11,7 @@
                 $image_url = wp_get_attachment_image_src($image_id,'square', true); ?>
                 <img src="<?php echo $image_url[0]; ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" />
             <?php } else { ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/faculty_default.png" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" />
+                <img src="<?php bloginfo('url'); ?>/wp-content/themes/mayecreate-child-theme/img/faculty_default.png" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" />
             <?php } ?>
             <div class="hover_text">
                 <div class="hover_button">VIEW MORE</div>
