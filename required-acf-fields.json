@@ -2761,7 +2761,6 @@
                     "dgs": "DGS Roster",
                     "policy": "Policies",
                     "form": "Forms",
-                    "dsa_faculty": "DSA Faculty",
                     "muidsi_person": "MUIDSI Person"
                 },
                 "default_value": [],
