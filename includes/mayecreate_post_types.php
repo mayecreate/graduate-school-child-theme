@@ -309,6 +309,42 @@ function mayecreate_create_post_type() {
 			)
 		);
 	}
+	if (in_array('muidsi_person', get_field('gradschool_specific_post_types', 'option'))) {
+			//COPIED FROM THEIR OLD SITE
+			register_post_type( 'person',
+			array(
+				'labels' => array(
+					'name' => __( 'People' ),
+					'singular_name' => __( 'Person' )
+				),
+				'public' => true,
+				'has_archive' => true,
+				'menu_icon' => 'dashicons-businessman',
+				'supports' => array(
+					'title',
+					'editor',
+					'thumbnail',
+					'page-attributes'
+				),
+				'menu_position' => 5,
+				//'taxonomies' => array( 'category' ),
+			)
+		);
+
+		// register "people_type" for "person"
+		register_taxonomy( 'person_type', 'person', array(
+			'label'        => __( 'Type', 'textdomain' ),
+			'show_admin_column' => true,
+			'hierarchical' => true,
+		) );
+
+		// register "person_research_area" for "person"
+		register_taxonomy( 'person_research_area', 'person', array(
+			'label'        => __( 'Research Area', 'textdomain' ),
+			'show_admin_column' => true,
+			'hierarchical' => true,
+		) );
+	}
 }
 add_action( 'init', 'mayecreate_create_post_type' );
 

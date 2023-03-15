@@ -1119,6 +1119,27 @@ div#homefeatured .carousel-control, #home_buttons {
 	display: none;
 }
 
+/* MUIDSI SPECIFIC STYLES
+=====================================  */
+.people-container-row {
+    display: block;
+    text-align: center;
+}
+.people-container-long-row {
+    display: block;
+    text-align: center;
+}
+.people-container-long-row:after, .people-panel-long-pic:after, .people-panel-long-info:after {
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 0;
+    content: '';
+}
+.people-container-long-row strong {
+    display: block;
+}
+
     /* Small devices (576px and up). This is anything labeled "sm" in bootstrap. */
     @media (min-width: 576px) {
         
@@ -1171,6 +1192,57 @@ div#homefeatured .carousel-control, #home_buttons {
 				color: vars.$black;
                 opacity: 1;
 			}
+            /* MUIDSI SPECIFIC STYLES
+            ====================================== */
+            .people-container-row {
+                display: block;
+                text-align: left;
+            }
+            .people-container-row:after, .people-panel-left:after, .people-panel-right:after {
+                display: block;
+                clear: both;
+                width: 100%;
+                height: 0;
+                content: '';
+            }
+            .people-panel-left, .people-panel-right {
+                margin-bottom: 35px;
+            }
+            .people-panel-pic {
+                float: left;
+                width: 135px;
+            } 
+            .people-panel-info {
+                float: left;
+                width: calc(100% - 150px);
+                margin-left: 15px;
+            }
+            .people-panel-pic:after, .people-panel-info:after {
+                display: block;
+                clear: both;
+                width: 100%;
+                height: 0;
+                content: '';
+            }
+            .people-panel-info a{
+                text-decoration: none;
+            }
+            .people-panel-info p {
+                white-space: nowrap;
+                line-height: 1.0;
+                margin-bottom: 7px;
+            }
+            .people-panel-info h3 {
+                white-space: nowrap;
+                margin-bottom: 7px;
+            }
+            .people-panel-info h5 {
+                color: vars.$black;
+                font-size: 15px;
+                white-space: nowrap;
+                line-height: 1.1;
+                margin-bottom: 5px;
+            }
         }
 
             /* Large devices (desktops, 992px and up). This is anything labeled "lg" in bootstrap. */
@@ -1507,6 +1579,17 @@ div#homefeatured .carousel-control, #home_buttons {
                         .pagebreak_left_content, .pagebreak_right_content {
                             width: 50%;
                         }
+                        /* MUIDSI SPECIFIC STYLES
+                        ====================================== */
+                        .people-panel-left, .people-panel-right {
+                            float: left;
+                           width: 50%;
+                           padding-right: 20px; 
+                       }
+               
+                       .people-container-long-row strong {
+                           display: inline-block;
+                       }
                     }
 
                         /* Xtra-Xtra-Large devices (desktops, 1400px and up). This is anything labeled "xxl" in bootstrap. */
