@@ -633,21 +633,21 @@ h2, .h2 {
 .searchandfilter ul {
     margin-left: 0;
 }
-.staff_2020_search_wrapper .searchandfilter ul {
+.searchandfilter ul {
     margin: 0 0 20px 0;
 }
-.staff_2020_search_wrapper .searchandfilter ul li {
+.searchandfilter ul li {
     display: block;
     margin: 0 0 10px 0;
     list-style: none;
     padding: 0;
 }
-.staff_2020_search_wrapper .searchandfilter ul li label {
+.searchandfilter ul li label {
     display: block;
 	font-size: 18px;
 	font-size: 1.8rem;
 }
-.staff_2020_search_wrapper .searchandfilter ul li select, .staff_2020_search_wrapper .searchandfilter ul li input {
+.searchandfilter ul li select, .searchandfilter ul li input {
     max-width: 100%;
     border: 1px solid vars.$additional_theme_color_3;
     color: vars.$black;
@@ -656,7 +656,7 @@ h2, .h2 {
     width: 100%;
     border-radius: 0px;
 }
-.staff_2020_search_wrapper .searchandfilter ul li .search-filter-reset {
+.searchandfilter ul li .search-filter-reset {
     color: vars.$black;
     background: vars.$additional_theme_color_1;
     border: 0 none;
@@ -668,7 +668,7 @@ h2, .h2 {
     text-decoration: none;
     border-radius: 0px;
 }
-.staff_2020_search_wrapper .searchandfilter ul li .search-filter-reset:hover, .staff_2020_search_wrapper .searchandfilter ul li .search-filter-reset:focus {
+.searchandfilter ul li .search-filter-reset:hover, .searchandfilter ul li .search-filter-reset:focus {
     background: vars.$black;
     color: vars.$white;
 }
@@ -1016,21 +1016,21 @@ ul.square_list li:hover a, ul.square_list li.active a {
 	font-weight: 700;
 	color: child_vars.$dark_grey;
 }
-.staff_2020_search_wrapper .searchandfilter ul {
+.searchandfilter ul {
     margin: 0 0 20px 0;
 }
-.staff_2020_search_wrapper .searchandfilter ul li {
+.searchandfilter ul li {
     display: block;
     margin: 0 0 10px 0;
     list-style: none;
     padding: 0;
 }
-.staff_2020_search_wrapper .searchandfilter ul li label {
+.searchandfilter ul li label {
     display: block;
 	font-size: 18px;
 	font-size: 1.8rem;
 }
-.staff_2020_search_wrapper .searchandfilter ul li select, .staff_2020_search_wrapper .searchandfilter ul li input {
+.searchandfilter ul li select, .searchandfilter ul li input {
     max-width: 100%;
     border: 1px solid vars.$additional_theme_color_4;
     color: vars.$black;
@@ -1039,7 +1039,7 @@ ul.square_list li:hover a, ul.square_list li.active a {
     width: 100%;
     border-radius: 0px;
 }
-.staff_2020_search_wrapper .searchandfilter ul li .search-filter-reset {
+.searchandfilter ul li .search-filter-reset {
     color: vars.$black;
     background: vars.$additional_theme_color_1;
     border: 0 none;
@@ -1051,7 +1051,7 @@ ul.square_list li:hover a, ul.square_list li.active a {
     text-decoration: none;
     border-radius: 0px;
 }
-.staff_2020_search_wrapper .searchandfilter ul li .search-filter-reset:hover, .staff_2020_search_wrapper .searchandfilter ul li .search-filter-reset:focus {
+.searchandfilter ul li .search-filter-reset:hover, .searchandfilter ul li .search-filter-reset:focus {
     background: vars.$black;
     color: vars.$white;
 }
@@ -1558,15 +1558,15 @@ div#homefeatured .carousel-control, #home_buttons {
 
                 /* Larger-er devices (desktops, 1024px and up). This is NOT a breakpoint in bootstrap. */
                 @media (min-width: 1024px) {
-                    .staff_2020_search_wrapper .searchandfilter ul {
+                    .searchandfilter ul {
                         display: block;
                         text-align: center;
                     }
-                    .staff_2020_search_wrapper .searchandfilter ul li {
+                    .searchandfilter ul li {
                         display: inline-block;
                         vertical-align: top;
                     }
-                    .staff_2020_search_wrapper .searchandfilter ul li {
+                    .searchandfilter ul li {
                         margin-left: 15px;
                     }
                 }
