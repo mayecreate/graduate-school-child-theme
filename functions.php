@@ -93,3 +93,5 @@ function my_wp_nav_menu_objects( $items, $args ) {
 	return $items;
 	
 }
+
+require_once 'includes/muii_handlePeople.php';
