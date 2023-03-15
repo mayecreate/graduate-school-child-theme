@@ -1,6 +1,6 @@
 <?php
 /*
-* Template Name: Announcements
+* Template Name: Announcements - MUIDSI
 *
 * you will se some inline style on the columns
 * This is there so that the content is in the correct 
@@ -31,13 +31,11 @@ get_header(); ?>
                                 while ($post_query->have_posts()) {?>
                                 <?php $post_query->the_post(); ?>
                                     <div class="col-12">
-                                        <?php get_template_part('partials/loop','blog'); ?>
+                                        <?php get_template_part('partials/loop','blog-muidsi'); ?>
                                     </div>
                                 <?php } 
-                                posts_nav_link(); 
                                 wp_reset_postdata();
                             } else {?>
-                                <h3 class="headline">The end.</h3>
                             <?php }?>
                 </div>
                 <div class="clear"></div>
@@ -64,13 +62,9 @@ get_header(); ?>
                                         <?php $post_query->the_post(); ?>
                                     
                                         <div class="col-12">
-                                        <?php get_template_part('partials/loop','blog'); ?>
+                                        <?php get_template_part('partials/loop','events'); ?>
                                     </div>
                                 <?php } 
-
-                                echo get_next_posts_link( 'Older Entries', $the_query->max_num_pages );
-
-                                echo get_previous_posts_link( 'Newer Entries' );
 
 
                                 //wp_reset_postdata();
