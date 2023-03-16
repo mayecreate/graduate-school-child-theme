@@ -158,35 +158,35 @@ echo $ga_tag;
     </div><!-- homefeatured -->
 	<div class="blackbox">
 		<div class="container">
-			<div class="row">
+			<div class="row justify-content-center">
 
-					<div class="home_content col-md-3">
 						<?php $home_one = get_field("home_one"); ?>
 						<?php if ($home_one) { ?>
+					<div class="home_content col-md-3">
 							<?php echo $home_one; ?>
-						<?php } ?>
 					</div>
 
-					<div class="home_content col-md-3">
+						<?php } ?>
 						<?php $home_two = get_field("home_two"); ?>
 						<?php if ($home_two) { ?>
-							<?php echo $home_two; ?>
-						<?php } ?>
-					</div>
-
 					<div class="home_content col-md-3">
+							<?php echo $home_two; ?>
+					</div>
+						<?php } ?>
+
 						<?php $home_three = get_field("home_three"); ?>
 						<?php if ($home_three) { ?>
-							<?php echo $home_three; ?>
-						<?php } ?>
-					</div>
-
 					<div class="home_content col-md-3">
+							<?php echo $home_three; ?>
+					</div>
+						<?php } ?>
+
 						<?php $home_four = get_field("home_four"); ?>
 						<?php if ($home_four) { ?>
+					<div class="home_content col-md-3">
 							<?php echo $home_four; ?>
-						<?php } ?>
 					</div>
+						<?php } ?>
 			</div>
 		</div>
 	</div>
