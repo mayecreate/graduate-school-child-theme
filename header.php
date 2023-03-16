@@ -75,7 +75,7 @@ echo $ga_tag;
 <div class="collapse" id="search_bar">
 	<div class="search_container">
 		<div class="container">
-			<?php $search_text = "Search Graduate School Website"; ?> 
+			<?php $search_text = "Search ". get_bloginfo('name') ." Website"; ?> 
 			<form method="get" id="searchform_header" action="<?php bloginfo('home'); ?>/"> 
 			<input type="text" value="<?php echo $search_text; ?>" name="s" id="s" onblur="if (this.value == '') {this.value = '<?php echo $search_text; ?>';}" onfocus="if (this.value == '<?php echo $search_text; ?>') {this.value = '';}" /> 
 			<input type="hidden" value="post" name="post_type" />
