@@ -78,7 +78,6 @@ echo $ga_tag;
 			<?php $search_text = "Search ". get_bloginfo('name') ." Website"; ?> 
 			<form method="get" id="searchform_header" action="<?php bloginfo('home'); ?>/"> 
 			<input type="text" value="<?php echo $search_text; ?>" name="s" id="s" onblur="if (this.value == '') {this.value = '<?php echo $search_text; ?>';}" onfocus="if (this.value == '<?php echo $search_text; ?>') {this.value = '';}" /> 
-			<input type="hidden" value="post" name="post_type" />
 			<input type="hidden" id="searchsubmit" /> 
 			</form>
 		</div>
@@ -165,8 +164,8 @@ echo $ga_tag;
 					<div class="home_content col-md-3">
 							<?php echo $home_one; ?>
 					</div>
-
 						<?php } ?>
+
 						<?php $home_two = get_field("home_two"); ?>
 						<?php if ($home_two) { ?>
 					<div class="home_content col-md-3">
