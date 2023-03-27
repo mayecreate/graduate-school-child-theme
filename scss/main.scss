@@ -1139,6 +1139,26 @@ div#homefeatured .carousel-control, #home_buttons {
 .people-container-long-row strong {
     display: block;
 }
+#cookie-notice {
+    background: vars.$pagebreak_background_color !important;
+}
+#cn-notice-text, #cookie-notice .cookie-notice-container {
+	color:vars.$pagebreak_heading_color !important;
+}
+#cookie-notice .cn-button {
+	color: vars.$button_color !important;
+    background: vars.$button_background_color !important;
+    display: inline-block !important;
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+#cookie-notice .cn-button:hover {
+	color:vars.$button_hover_color !important;
+    background: vars.$button_hover_background_color !important;
+}
+.cn-close-icon:before, .cn-close-icon:after {
+    background-color: vars.$pagebreak_heading_color !important;;
+}
 
     /* Small devices (576px and up). This is anything labeled "sm" in bootstrap. */
     @media (min-width: 576px) {
