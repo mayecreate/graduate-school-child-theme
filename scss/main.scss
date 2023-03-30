@@ -1115,8 +1115,30 @@ div#homefeatured {
 div#homefeatured .carousel-control, #home_buttons {
 	display: none;
 }
-.slideDesc {
-	display: none;
+div#homefeatured .slideDesc {
+	display: block; 
+    background: linear-gradient(to right,  rgba(244,185,45,.85) 0%, rgba(244,185,45,.85) 50%, rgba(244,185,45,0) 100%);
+}
+div#homefeatured .slideDesc .slideTitle {
+    text-align: left;
+    margin-bottom: 0;
+    padding: 0;
+}
+div#homefeatured .slideDesc .slideTitle:after, div#homefeatured .slideDesc .slideTitle:before {
+    display: none;
+}
+div#homefeatured .slideDesc .btn-mayecreate.center, div#homefeatured .slideDesc a.btn-mayecreate.center:link, div#homefeatured .slideDesc a.btn-mayecreate.center:visited {
+    background: vars.$footer_background_color;
+    color: vars.$footer_link_color;
+    margin: 0 !important;
+    padding: 10px 15px;
+}
+div#homefeatured .slideDesc a.btn-mayecreate.center:hover, div#homefeatured .slideDesc a.btn-mayecreate.center:active {
+    color: vars.$footer_background_color;
+    background: vars.$footer_link_color;
+}
+div#homefeatured .slideDesc .slideText {
+    font-weight: 700;
 }
 
 /* MUIDSI SPECIFIC STYLES
