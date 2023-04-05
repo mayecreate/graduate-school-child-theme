@@ -193,7 +193,7 @@ echo $ga_tag;
 		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
 			<h2 class="sr-only sr-only-focusable">The header image is the default header image for the site.</h2>
 		</div>	
-<?php } elseif(is_singular('staff')) { ?>	
+<?php } elseif(is_singular('staff') || is_singular('person')) { ?>	
 		<div class="pagehead" id="internalfeatured" style=" max-height: 600px; background-image: url('<?php echo $default_header_image; ?>')">
 			<h2 class="sr-only sr-only-focusable">The header image is the default header image for the site.</h2>
         </div>
