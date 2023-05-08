@@ -128,6 +128,7 @@ function mayecreate_create_post_type() {
 			'rewrite' => array('slug' => 'degree-program'),
 			'supports' => array('title','thumbnail','revisions','editor'),
 			'taxonomies' => array('degreecategory', 'degreelocation'),
+			'show_in_rest' => true,
 			'has_archive' => true,
 			'menu_icon' => 'dashicons-exerpt-view',
 			)
@@ -194,6 +195,7 @@ function mayecreate_create_post_type() {
 			'menu_position' => 10,
 			'rewrite' => array('slug' => 'staff'),
 			'supports' => array('title','thumbnail','revisions','editor'),
+			'show_in_rest' => true,
 			'has_archive' => true,
 			'menu_icon' => 'dashicons-businessman',
 			)
@@ -216,6 +218,7 @@ function mayecreate_create_post_type() {
 			'menu_position' => 10,
 			'rewrite' => array('slug' => 'pff-faculty'),
 			'supports' => array('title','thumbnail','revisions','editor'),
+			'show_in_rest' => true,
 			'has_archive' => true,
 			'menu_icon' => 'dashicons-businessman',
 			)
@@ -238,6 +241,7 @@ function mayecreate_create_post_type() {
 			'menu_position' => 10,
 			'rewrite' => array('slug' => 'rep-faculty'),
 			'supports' => array('title','thumbnail','revisions','editor'),
+			'show_in_rest' => true,
 			'has_archive' => true,
 			'menu_icon' => 'dashicons-businessman',
 			)
