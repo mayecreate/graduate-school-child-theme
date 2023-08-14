@@ -18,7 +18,7 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2>Meet our PFF Faculty Diversity Postdocs!</h2>
+                <h2>Meet our PFF Postdocs!</h2>
                     <div class="row justify-content-center staff_row">
                         <?php // args
                         $args = array(
@@ -121,7 +121,7 @@ get_header(); ?>
 	{ ?>
         <div class="row">
             <div class="col-md-12">
-                <h2>Former PFF Faculty Diversity Postdocs!</h2>
+                <h2>Former PFF Postdocs!</h2>
             </div>
         </div>
 		<div class="row justify-content-center staff_row">		
